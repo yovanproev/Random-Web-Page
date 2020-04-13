@@ -264,38 +264,44 @@
       flex-direction: column;
       position: relative;
       margin-bottom: -190px;
-      margin-top: 130px;
+      margin-top: 190px;
 
       .box-1 {
         width: 100vw;
         height: 40vh;
         left: 0px;
-        top: -140px;
+        top: -210px;
         position: relative;
 
         #toggler {
-          left: 180px;
+          left: 178px;
+          top: 200px;
+        }
+
+        #toggler:checked {
+          left: 178px;
+          top: 275px;
         }
       }
       .box-2 {
         width: 100vw;
         height: 40vh;
         left: 0px;
-        top: -150px;
+        top: -220px;
         position: relative;
       }
       .box-3 {
         width: 100vw;
         height: 40vh;
         left: 0px;
-        top: -160px;
+        top: -230px;
         position: relative;
       }
       .box-4 {
         width: 100vw;
         height: 40vh;
         left: 0px;
-        top: -150px;
+        top: -220px;
         bottom: -120px;
         position: relative;
       }
@@ -304,7 +310,7 @@
         width: 100vw;
         height: 40vh;
         left: 0px;
-        top: -140px;
+        top: -210px;
         bottom: -140px;
         position: relative;
       }
@@ -313,7 +319,7 @@
         width: 100vw;
         height: 40vh;
         left: 0px;
-        top: -130px;
+        top: -200px;
         position: relative;
       }
     }

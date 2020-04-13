@@ -89,7 +89,7 @@
         position: absolute; }
 
 #showcase {
-  background-image: url("/dist/img/featured.jpg");
+  background: url(/dist/img/featured.jpg);
   height: 40vh; }
   #showcase .container-showcase {
     padding-top: 30px; }
@@ -117,16 +117,16 @@
   background: #ece7e7; }
   #grid .header-3 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: -40px;
     margin-bottom: 10px; }
   #grid .container-boxes {
     display: grid;
     margin: 0px 200px;
     grid-template-areas: "box-1 box-2 box-3" "box-4 box-5 box-6";
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 320px 320px 320px;
     grid-template-rows: 350px 350px;
     grid-gap: 1rem; }
-    #grid .container-boxes .box-1,
+    #grid .container-boxes mar .box-1,
     #grid .container-boxes .box-2,
     #grid .container-boxes .box-3 {
       margin-top: 20px; }
@@ -139,7 +139,7 @@
       background: #015871; }
       #grid .container-boxes .box-1 #toggler {
         position: absolute;
-        top: 200px;
+        top: 190px;
         left: 140px;
         z-index: 1;
         cursor: pointer;
@@ -151,13 +151,13 @@
       #grid .container-boxes .box-1 .fa-plus-square {
         top: -1px; }
       #grid .container-boxes .box-1 .fa-minus-square {
-        top: 240px; }
+        top: 250px; }
       #grid .container-boxes .box-1 #toggler:checked {
-        top: 280px; }
+        top: 265px; }
       #grid .container-boxes .box-1 #toggler:checked ~ div {
         display: flex;
         flex-direction: column;
-        top: -20px;
+        top: -30px;
         left: 0px;
         height: 100%;
         width: 100%;
@@ -197,21 +197,21 @@
       grid-area: box-4;
       height: 50.3%;
       width: 22.3%;
-      bottom: -445px;
+      bottom: -420px;
       left: 200px;
       background: lightblue; }
     #grid .container-boxes .box-5 {
       grid-area: box-5;
       height: 50.3%;
       width: 22.3%;
-      bottom: -445px;
+      bottom: -420px;
       left: 515px;
       background: #015871; }
     #grid .container-boxes .box-6 {
       grid-area: box-6;
       height: 50.3%;
       width: 22.3%;
-      bottom: -445px;
+      bottom: -420px;
       left: 833px;
       background: lightblue; }
     #grid .container-boxes .box-1,
@@ -287,9 +287,9 @@
       color: white; }
   #grid .container-boxes-1 {
     display: grid;
-    margin: 0px 200px;
+    margin: 0px 185px;
     grid-template-areas: "box-7 box-8 box-9";
-    grid-template-columns: 300px 300px 300px; }
+    grid-template-columns: 320px 320px 320px; }
     #grid .container-boxes-1 .container-boxes .box-1, #grid .container-boxes .container-boxes-1 .box-1,
     #grid .container-boxes-1 .container-boxes .box-2, #grid .container-boxes .container-boxes-1 .box-2,
     #grid .container-boxes-1 .container-boxes .box-3, #grid .container-boxes .container-boxes-1 .box-3,
