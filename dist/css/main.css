@@ -89,7 +89,7 @@
         position: absolute; }
 
 #showcase {
-  background: url(/./dist/img/featured.jpg);
+  background: url(../img/featured.jpg);
   height: 40vh; }
   #showcase .container-showcase {
     padding-top: 30px; }
