@@ -1,0 +1,395 @@
+@import "utilities";
+
+@media (max-width: 500px) {
+  #navbar {
+    display: flex;
+    margin: auto;
+
+    .menu-wrap {
+      margin: auto;
+
+      .toggler {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 2;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        opacity: 0;
+        display: block;
+      }
+
+      /* Toggler Animation */
+      .toggler:checked + .container-navbar > div {
+        transform: rotate(135deg);
+      }
+
+      /* Turns Lines Into X */
+      .toggler:checked + .container-navbar > div:before,
+      .toggler:checked + .container-navbar > div:after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+
+      /* Rotate On Hover When Checked */
+      .toggler:checked:hover + .container-navbar > div {
+        transform: rotate(225deg);
+      }
+
+      .container-navbar {
+        /* Hamburger Line */
+        > div {
+          position: absolute;
+          left: 11px;
+          top: 18.5px;
+          flex: none;
+          width: 4.5%;
+          height: 2px;
+          background: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.4s ease;
+        }
+
+        /* Hamburger Lines - Top & Bottom */
+        > div::before,
+        > div::after {
+          content: "";
+          position: absolute;
+          z-index: 1;
+          top: -6px;
+          width: 100%;
+          height: 2px;
+          background: inherit;
+        }
+
+        /* Moves Line Down */
+        > div::after {
+          top: 6px;
+        }
+      }
+
+      .menu {
+        display: none;
+
+        > div > div a {
+          color: darkblue;
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+      }
+
+      .toggler:checked ~ div {
+        display: flex;
+        flex-direction: column;
+        top: 0px;
+        left: -1px;
+        height: 100%;
+        background: rgba(153, 151, 151, 0.5);
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        justify-content: center;
+
+        li {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+
+    .menu-social {
+      position: relative;
+      margin: auto;
+    }
+
+    .menu-search-bar {
+      position: static;
+      margin: auto;
+      margin-right: 20px;
+
+      form {
+        display: none;
+      }
+    }
+  }
+
+  #main-head {
+    margin: 10px auto;
+
+    .container-head {
+      margin: auto;
+
+      .head-menu {
+        display: none;
+
+        > div {
+          height: 50vh;
+          margin-top: -100px;
+
+          ul {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            li {
+              border: none;
+            }
+          }
+        }
+
+        > div a {
+          color: darkblue;
+          font-size: 0.7rem;
+          font-weight: bold;
+          margin: auto;
+        }
+      }
+
+      /* Hamburger Line */
+      .hamburger > div {
+        position: absolute;
+        left: 300px;
+        top: 88px;
+        flex: none;
+        width: 7.5%;
+        height: 3px;
+        background: $primary-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease;
+      }
+
+      /* Hamburger Lines - Top & Bottom */
+      .hamburger > div::before,
+      .hamburger > div::after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: -9px;
+        width: 100%;
+        height: 3px;
+        background: inherit;
+      }
+
+      /* Moves Line Down */
+      .hamburger > div::after {
+        top: 9px;
+      }
+
+      .toggler {
+        position: absolute;
+        top: 75px;
+        left: 300px;
+        z-index: 2;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        opacity: 0;
+        display: block;
+      }
+
+      /* Toggler Animation */
+      .toggler:checked + .hamburger > div {
+        transform: rotate(135deg);
+      }
+
+      /* Turns Lines Into X */
+      .toggler:checked + .hamburger > div:before,
+      .toggler:checked + .hamburger > div:after {
+        top: 0px;
+        transform: rotate(90deg);
+      }
+
+      /* Rotate On Hover When Checked */
+      .toggler:checked:hover + .hamburger > div {
+        transform: rotate(225deg);
+      }
+
+      .toggler:checked ~ div {
+        display: flex;
+        flex-direction: column;
+        top: 0px;
+        left: -1px;
+        height: 100%;
+        background: rgba(153, 151, 151, 0.5);
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        justify-content: center;
+        z-index: 1;
+      }
+
+      img {
+        margin: 20px 0;
+        margin-left: 10px;
+        height: 45px;
+      }
+    }
+  }
+
+  #showcase {
+    width: 100%;
+    margin: auto;
+
+    .container-showcase {
+      margin: auto;
+    }
+
+    .inside-container {
+      margin: -10px auto;
+      padding-bottom: 50px;
+
+      p {
+        margin: 20px auto;
+      }
+
+      .btn {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  #grid {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    .container-boxes {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      margin-bottom: -190px;
+      margin-top: 130px;
+
+      .box-1 {
+        width: 100vw;
+        height: 40vh;
+        left: 0px;
+        top: -140px;
+        position: relative;
+
+        #toggler {
+          left: 180px;
+        }
+      }
+      .box-2 {
+        width: 100vw;
+        height: 40vh;
+        left: 0px;
+        top: -150px;
+        position: relative;
+      }
+      .box-3 {
+        width: 100vw;
+        height: 40vh;
+        left: 0px;
+        top: -160px;
+        position: relative;
+      }
+      .box-4 {
+        width: 100vw;
+        height: 40vh;
+        left: 0px;
+        top: -150px;
+        bottom: -120px;
+        position: relative;
+      }
+
+      .box-5 {
+        width: 100vw;
+        height: 40vh;
+        left: 0px;
+        top: -140px;
+        bottom: -140px;
+        position: relative;
+      }
+
+      .box-6 {
+        width: 100vw;
+        height: 40vh;
+        left: 0px;
+        top: -130px;
+        position: relative;
+      }
+    }
+
+    .container-boxes-1 {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+
+      img {
+        width: 100%;
+      }
+
+      .box-span {
+        margin-left: 100px;
+      }
+
+      .box-7,
+      .box-8,
+      .box-9 {
+        .calendar > div {
+          width: 30px;
+        }
+      }
+
+      h3 {
+        font-size: 20px;
+        margin-top: 5px;
+      }
+
+      .container-clients {
+        img {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  #footer {
+    margin: auto;
+
+    .foot-container {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+
+      .f-box-1 {
+        i {
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+      }
+
+      .f-box-2 {
+        li {
+          margin-top: 5px;
+          padding: 5px 0;
+        }
+      }
+    }
+  }
+
+  .foot-foot {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+
+    .p-1 {
+      text-align: center;
+      margin: auto;
+      padding: 10px 0px;
+    }
+
+    .p-2 {
+      margin: auto;
+    }
+  }
+}

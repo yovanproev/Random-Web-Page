@@ -1,0 +1,269 @@
+@media (max-width: 500px) {
+  #navbar {
+    display: flex;
+    margin: auto; }
+    #navbar .menu-wrap {
+      margin: auto;
+      /* Toggler Animation */
+      /* Turns Lines Into X */
+      /* Rotate On Hover When Checked */ }
+      #navbar .menu-wrap .toggler {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 2;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        opacity: 0;
+        display: block; }
+      #navbar .menu-wrap .toggler:checked + .container-navbar > div {
+        transform: rotate(135deg); }
+      #navbar .menu-wrap .toggler:checked + .container-navbar > div:before,
+      #navbar .menu-wrap .toggler:checked + .container-navbar > div:after {
+        top: 0;
+        transform: rotate(90deg); }
+      #navbar .menu-wrap .toggler:checked:hover + .container-navbar > div {
+        transform: rotate(225deg); }
+      #navbar .menu-wrap .container-navbar {
+        /* Hamburger Line */
+        /* Hamburger Lines - Top & Bottom */
+        /* Moves Line Down */ }
+        #navbar .menu-wrap .container-navbar > div {
+          position: absolute;
+          left: 11px;
+          top: 18.5px;
+          flex: none;
+          width: 4.5%;
+          height: 2px;
+          background: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.4s ease; }
+        #navbar .menu-wrap .container-navbar > div::before,
+        #navbar .menu-wrap .container-navbar > div::after {
+          content: "";
+          position: absolute;
+          z-index: 1;
+          top: -6px;
+          width: 100%;
+          height: 2px;
+          background: inherit; }
+        #navbar .menu-wrap .container-navbar > div::after {
+          top: 6px; }
+      #navbar .menu-wrap .menu {
+        display: none; }
+        #navbar .menu-wrap .menu > div > div a {
+          color: darkblue;
+          font-size: 1.5rem;
+          font-weight: bold; }
+      #navbar .menu-wrap .toggler:checked ~ div {
+        display: flex;
+        flex-direction: column;
+        top: 0px;
+        left: -1px;
+        height: 100%;
+        background: rgba(153, 151, 151, 0.5);
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        justify-content: center; }
+        #navbar .menu-wrap .toggler:checked ~ div li {
+          display: flex;
+          justify-content: center; }
+    #navbar .menu-social {
+      position: relative;
+      margin: auto; }
+    #navbar .menu-search-bar {
+      position: static;
+      margin: auto;
+      margin-right: 20px; }
+      #navbar .menu-search-bar form {
+        display: none; }
+  #main-head {
+    margin: 10px auto; }
+    #main-head .container-head {
+      margin: auto;
+      /* Hamburger Line */
+      /* Hamburger Lines - Top & Bottom */
+      /* Moves Line Down */
+      /* Toggler Animation */
+      /* Turns Lines Into X */
+      /* Rotate On Hover When Checked */ }
+      #main-head .container-head .head-menu {
+        display: none; }
+        #main-head .container-head .head-menu > div {
+          height: 50vh;
+          margin-top: -100px; }
+          #main-head .container-head .head-menu > div ul {
+            display: flex;
+            justify-content: center;
+            flex-direction: column; }
+            #main-head .container-head .head-menu > div ul li {
+              border: none; }
+        #main-head .container-head .head-menu > div a {
+          color: darkblue;
+          font-size: 0.7rem;
+          font-weight: bold;
+          margin: auto; }
+      #main-head .container-head .hamburger > div {
+        position: absolute;
+        left: 300px;
+        top: 88px;
+        flex: none;
+        width: 7.5%;
+        height: 3px;
+        background: darkblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease; }
+      #main-head .container-head .hamburger > div::before,
+      #main-head .container-head .hamburger > div::after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: -9px;
+        width: 100%;
+        height: 3px;
+        background: inherit; }
+      #main-head .container-head .hamburger > div::after {
+        top: 9px; }
+      #main-head .container-head .toggler {
+        position: absolute;
+        top: 75px;
+        left: 300px;
+        z-index: 2;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        opacity: 0;
+        display: block; }
+      #main-head .container-head .toggler:checked + .hamburger > div {
+        transform: rotate(135deg); }
+      #main-head .container-head .toggler:checked + .hamburger > div:before,
+      #main-head .container-head .toggler:checked + .hamburger > div:after {
+        top: 0px;
+        transform: rotate(90deg); }
+      #main-head .container-head .toggler:checked:hover + .hamburger > div {
+        transform: rotate(225deg); }
+      #main-head .container-head .toggler:checked ~ div {
+        display: flex;
+        flex-direction: column;
+        top: 0px;
+        left: -1px;
+        height: 100%;
+        background: rgba(153, 151, 151, 0.5);
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        justify-content: center;
+        z-index: 1; }
+      #main-head .container-head img {
+        margin: 20px 0;
+        margin-left: 10px;
+        height: 45px; }
+  #showcase {
+    width: 100%;
+    margin: auto; }
+    #showcase .container-showcase {
+      margin: auto; }
+    #showcase .inside-container {
+      margin: -10px auto;
+      padding-bottom: 50px; }
+      #showcase .inside-container p {
+        margin: 20px auto; }
+      #showcase .inside-container .btn {
+        margin-top: 40px; }
+  #grid {
+    margin: auto;
+    display: flex;
+    flex-direction: column; }
+    #grid .container-boxes {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      margin-bottom: -190px;
+      margin-top: 130px; }
+      #grid .container-boxes .box-1 {
+        width: 100vw;
+        height: 40vh;
+        left: 0px;
+        top: -140px;
+        position: relative; }
+        #grid .container-boxes .box-1 #toggler {
+          left: 180px; }
+      #grid .container-boxes .box-2 {
+        width: 100vw;
+        height: 40vh;
+        left: 0px;
+        top: -150px;
+        position: relative; }
+      #grid .container-boxes .box-3 {
+        width: 100vw;
+        height: 40vh;
+        left: 0px;
+        top: -160px;
+        position: relative; }
+      #grid .container-boxes .box-4 {
+        width: 100vw;
+        height: 40vh;
+        left: 0px;
+        top: -150px;
+        bottom: -120px;
+        position: relative; }
+      #grid .container-boxes .box-5 {
+        width: 100vw;
+        height: 40vh;
+        left: 0px;
+        top: -140px;
+        bottom: -140px;
+        position: relative; }
+      #grid .container-boxes .box-6 {
+        width: 100vw;
+        height: 40vh;
+        left: 0px;
+        top: -130px;
+        position: relative; }
+    #grid .container-boxes-1 {
+      display: flex;
+      flex-direction: column;
+      margin: auto; }
+      #grid .container-boxes-1 img {
+        width: 100%; }
+      #grid .container-boxes-1 .box-span {
+        margin-left: 100px; }
+      #grid .container-boxes-1 .box-7 .calendar > div,
+      #grid .container-boxes-1 .box-8 .calendar > div,
+      #grid .container-boxes-1 .box-9 .calendar > div {
+        width: 30px; }
+      #grid .container-boxes-1 h3 {
+        font-size: 20px;
+        margin-top: 5px; }
+      #grid .container-boxes-1 .container-clients img {
+        width: 50%; }
+  #footer {
+    margin: auto; }
+    #footer .foot-container {
+      margin: auto;
+      display: flex;
+      flex-direction: column; }
+      #footer .foot-container .f-box-1 i {
+        margin-top: 20px;
+        margin-bottom: 20px; }
+      #footer .foot-container .f-box-2 li {
+        margin-top: 5px;
+        padding: 5px 0; }
+  .foot-foot {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center; }
+    .foot-foot .p-1 {
+      text-align: center;
+      margin: auto;
+      padding: 10px 0px; }
+    .foot-foot .p-2 {
+      margin: auto; } }
