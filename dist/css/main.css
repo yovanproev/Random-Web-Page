@@ -90,7 +90,7 @@
 
 #showcase {
   background: url(../img/featured.jpg);
-  height: 40vh; }
+  height: 38vh; }
   #showcase .container-showcase {
     padding-top: 30px; }
   #showcase .inside-container {
@@ -117,7 +117,7 @@
   background: #ece7e7; }
   #grid .header-3 {
     text-align: center;
-    margin-top: -40px;
+    margin-top: -20px;
     margin-bottom: 10px; }
   #grid .container-boxes {
     display: grid;
@@ -126,10 +126,10 @@
     grid-template-columns: 320px 320px 320px;
     grid-template-rows: 350px 350px;
     grid-gap: 1rem; }
-    #grid .container-boxes mar .box-1,
+    #grid .container-boxes .box-1,
     #grid .container-boxes .box-2,
     #grid .container-boxes .box-3 {
-      margin-top: 20px; }
+      margin-bottom: 20px; }
     #grid .container-boxes .box-1 {
       grid-area: box-1;
       height: 50.3%;

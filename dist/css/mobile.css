@@ -186,7 +186,7 @@
       flex-direction: column;
       position: relative;
       margin-bottom: -190px;
-      margin-top: 190px; }
+      margin-top: 220px; }
       #grid .container-boxes .box-1 {
         width: 100vw;
         height: 40vh;
@@ -215,21 +215,21 @@
         width: 100vw;
         height: 40vh;
         left: 0px;
-        top: -220px;
+        top: -240px;
         bottom: -120px;
         position: relative; }
       #grid .container-boxes .box-5 {
         width: 100vw;
         height: 40vh;
         left: 0px;
-        top: -210px;
+        top: -230px;
         bottom: -140px;
         position: relative; }
       #grid .container-boxes .box-6 {
         width: 100vw;
         height: 40vh;
         left: 0px;
-        top: -200px;
+        top: -220px;
         position: relative; }
     #grid .container-boxes-1 {
       display: flex;
