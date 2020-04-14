@@ -215,7 +215,8 @@
       #grid .container-boxes-1 .container-clients img {
         width: 50%; }
   #footer {
-    margin: auto; }
+    margin: auto;
+    padding: 0; }
     #footer .container {
       margin: auto;
       display: block; }
