@@ -235,10 +235,6 @@
         display: inline; }
       #footer .container .f-box-3 div > span {
         text-align: right; }
-      #footer .container .f-box-3 .text-1 {
-        padding-left: 65px; }
-      #footer .container .f-box-3 .text-2 {
-        padding-left: 110px; }
   .foot-foot {
     display: flex;
     flex-direction: column;
