@@ -255,8 +255,6 @@
 
   #grid {
     padding: 0;
-    .container {
-    }
 
     .container-boxes {
       display: flex;
@@ -350,22 +348,9 @@
       }
 
       .f-box-3 {
-        > div {
-          padding: 0;
-        }
-
-        p {
-          display: inline;
-        }
-
-        div > span {
-          text-align: right;
-        }
-
-        .text-1 {
-        }
-
-        .text-2 {
+        .text-image {
+          display: inline-block;
+          flex-direction: column;
         }
       }
     }

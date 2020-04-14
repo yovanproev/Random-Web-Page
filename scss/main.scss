@@ -184,9 +184,6 @@
   background: rgb(236, 231, 231);
   padding: 20px 150px;
 
-  .container {
-  }
-
   .header-3 {
     text-align: center;
     margin: auto;
@@ -548,6 +545,7 @@
 
   .f-box-2 {
     text-align: center;
+    margin: 0 100px;
     padding: 40px;
 
     ul {
@@ -565,13 +563,11 @@
   }
 
   .f-box-3 {
-    text-align: center;
     padding: 40px;
-    width: 100%;
+    width: 80%;
 
-    > div {
-      padding: 30px;
-      padding-left: 60px;
+    .container {
+      display: flex;
     }
 
     h3 {
@@ -579,16 +575,26 @@
       margin-bottom: 20px;
     }
 
+    .text-img {
+      text-align: left;
+      width: 60%;
+
+      > span {
+        display: flex;
+
+        i {
+          padding-right: 10px;
+        }
+      }
+    }
+
     i {
       font-size: 30px;
     }
 
-    div > span {
-      text-align: right;
-    }
-
-    .text-img {
-      display: flex;
+    .text {
+      text-align: left;
+      width: 30%;
     }
   }
 }

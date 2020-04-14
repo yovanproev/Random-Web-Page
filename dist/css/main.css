@@ -362,6 +362,7 @@
       margin-top: 45px; }
   #footer .f-box-2 {
     text-align: center;
+    margin: 0 100px;
     padding: 40px; }
     #footer .f-box-2 ul {
       list-style: none; }
@@ -371,21 +372,25 @@
           color: white;
           text-decoration: none; }
   #footer .f-box-3 {
-    text-align: center;
     padding: 40px;
-    width: 100%; }
-    #footer .f-box-3 > div {
-      padding: 30px;
-      padding-left: 60px; }
+    width: 80%; }
+    #footer .f-box-3 .container {
+      display: flex; }
     #footer .f-box-3 h3 {
       text-align: center;
       margin-bottom: 20px; }
+    #footer .f-box-3 .text-img {
+      text-align: left;
+      width: 60%; }
+      #footer .f-box-3 .text-img > span {
+        display: flex; }
+        #footer .f-box-3 .text-img > span i {
+          padding-right: 10px; }
     #footer .f-box-3 i {
       font-size: 30px; }
-    #footer .f-box-3 div > span {
-      text-align: right; }
-    #footer .f-box-3 .text-img {
-      display: flex; }
+    #footer .f-box-3 .text {
+      text-align: left;
+      width: 30%; }
 
 .foot-foot {
   font-size: 0.8rem;

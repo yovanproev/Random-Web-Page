@@ -229,12 +229,9 @@
         #footer .container .f-box-2 li {
           margin: 5px;
           padding: 5px 0; }
-      #footer .container .f-box-3 > div {
-        padding: 0; }
-      #footer .container .f-box-3 p {
-        display: inline; }
-      #footer .container .f-box-3 div > span {
-        text-align: right; }
+      #footer .container .f-box-3 .text-image {
+        display: inline-block;
+        flex-direction: column; }
   .foot-foot {
     display: flex;
     flex-direction: column;
