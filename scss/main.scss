@@ -144,14 +144,12 @@
 #showcase {
   background: url(../img/featured.jpg) no-repeat center center/cover;
   height: 40vh;
-  padding-left: 200px;
 
   .container-showcase {
-    padding: 70px 0;
+    padding: 70px 150px;
   }
 
   .inside-container {
-    margin: auto;
     color: white;
     padding: 30px 10px;
 
@@ -184,7 +182,10 @@
 
 #grid {
   background: rgb(236, 231, 231);
-  padding: 20px;
+  padding: 20px 150px;
+
+  .container {
+  }
 
   .header-3 {
     text-align: center;
@@ -197,8 +198,6 @@
     grid-template-areas:
       "box-1 box-2 box-3"
       "box-4 box-5 box-6";
-
-    grid-template-rows: 280px 280px;
     grid-gap: 1rem;
     justify-content: center;
 
@@ -209,7 +208,6 @@
     //   rgba(255, 254, 234, 1) 35%,
     //   #b7e8eb 100%
     // );
-
     .box-1 {
       grid-area: box-1;
 
@@ -318,7 +316,7 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      padding: 0 5px;
+      padding: 100px;
 
       // Wave effect
       position: relative;
@@ -332,6 +330,7 @@
     .box-5,
     .box-6 {
       @extend %box-shared;
+
       i,
       h2 {
         position: relative;
@@ -403,15 +402,52 @@
 
   .container-boxes-1 {
     display: grid;
-    margin: auto;
     grid-template-areas: "box-7 box-8 box-9";
-    grid-template-columns: 300px 300px 300px;
     justify-content: center;
+    grid-gap: 1rem;
+
+    .box-7,
+    .box-8,
+    .box-9 {
+      @extend %box-shared;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    h3 {
+      margin-top: 15px;
+      margin-left: 10px;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .box-7 > div,
+    .box-8 > div,
+    .box-9 > div {
+      display: flex;
+    }
+
+    .box-7 {
+      grid-area: box-7;
+    }
+
+    .box-8 {
+      grid-area: box-8;
+    }
+
+    .box-9 {
+      grid-area: box-9;
+    }
+
+    p {
+      padding: 10px 0;
+    }
 
     %box-shared {
-      padding: 10px 10px;
-      margin: 10px;
       background: white;
+      padding: 10px;
 
       .calendar {
         top: 10px;
@@ -449,47 +485,6 @@
 
     .box-span {
       font-weight: bold;
-      margin-left: 60px;
-    }
-
-    .box-7,
-    .box-8,
-    .box-9 {
-      @extend %box-shared;
-
-      img {
-        height: 100%;
-        width: 100%;
-      }
-    }
-
-    h3 {
-      margin-top: 15px;
-      margin-left: 10px;
-      font-size: 0.9rem;
-      line-height: 1.5;
-    }
-
-    .box-7 > div,
-    .box-8 > div,
-    .box-9 > div {
-      display: flex;
-    }
-
-    .box-7 {
-      grid-area: box-7;
-    }
-
-    .box-8 {
-      grid-area: box-8;
-    }
-
-    .box-9 {
-      grid-area: box-9;
-    }
-
-    p {
-      padding: 10px 0;
     }
 
     .far,
@@ -519,34 +514,26 @@
 }
 
 #footer {
-  background: $med-color;
+  background: $primary-color;
   color: white;
+  padding: 20px 150px;
 
-  .foot-container {
-    display: grid;
-    grid-template-areas: "f-box-1 f-box-2 f-box-3";
-    grid-template-columns: 270px 270px 370px;
-    grid-gap: 1rem;
-    justify-content: center;
-    margin: auto;
+  .container {
+    display: flex;
     line-height: 1.5rem;
   }
 
   .f-box-1 {
-    grid-area: f-box-1;
-    padding: 10px 0;
-    padding-right: 15px;
     text-align: center;
-    margin-top: 30px;
+    padding: 40px;
 
     h4 {
       border: white ridge;
       border-width: 1px;
       height: 120px;
-      width: 200px;
+      width: 210px;
       padding-top: 45px;
-      margin-left: 30px;
-      margin-top: 90px;
+      text-align: center;
     }
 
     a {
@@ -560,17 +547,14 @@
   }
 
   .f-box-2 {
-    grid-area: f-box-2;
-    padding: 20px;
     text-align: center;
-    margin-top: 50px;
-    margin: auto;
+    padding: 40px;
 
     ul {
       list-style: none;
 
       li {
-        padding-top: 7px;
+        padding-top: 15px;
 
         a {
           color: white;
@@ -581,9 +565,14 @@
   }
 
   .f-box-3 {
-    grid-area: f-box-3;
-    margin-top: 100px;
-    margin-bottom: 20px;
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+
+    > div {
+      padding: 30px;
+      padding-left: 60px;
+    }
 
     h3 {
       text-align: center;
@@ -592,28 +581,14 @@
 
     i {
       font-size: 30px;
-      padding-right: 10px;
-    }
-
-    > div {
-      display: flex;
-      flex-direction: column;
     }
 
     div > span {
-      margin-left: 60px;
+      text-align: right;
     }
 
     .text-img {
       display: flex;
-
-      .text-1 {
-        margin-left: 72px;
-      }
-
-      .text-2 {
-        margin-left: 92px;
-      }
     }
   }
 }

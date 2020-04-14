@@ -109,7 +109,7 @@
           margin: auto; }
       #main-head .container-head .hamburger > div {
         position: absolute;
-        left: 300px;
+        right: 35px;
         top: 80px;
         flex: none;
         width: 7.5%;
@@ -133,13 +133,13 @@
       #main-head .container-head .toggler {
         position: absolute;
         top: 65px;
-        left: 300px;
+        right: 35px;
         z-index: 2;
         cursor: pointer;
         width: 30px;
         height: 30px;
         opacity: 0;
-        display: block; }
+        display: flex; }
       #main-head .container-head .toggler:checked + .hamburger > div {
         transform: rotate(135deg); }
       #main-head .container-head .toggler:checked + .hamburger > div:before,
@@ -157,7 +157,7 @@
         background: rgba(153, 151, 151, 0.5);
         width: 100%;
         text-align: center;
-        position: fixed;
+        position: absolute;
         justify-content: center;
         z-index: 1; }
       #main-head .container-head img {
@@ -178,54 +178,29 @@
       #showcase .inside-container .btn {
         margin-top: 40px; }
   #grid {
-    margin: auto;
-    display: flex;
-    flex-direction: column; }
+    padding: 0; }
     #grid .container-boxes {
-      margin: auto;
       display: flex;
       flex-direction: column;
       position: relative; }
-      #grid .container-boxes .box-1 {
-        width: 90vw;
-        height: 40vh;
-        margin-bottom: 10px;
-        position: relative; }
-        #grid .container-boxes .box-1 #toggler {
-          left: 178px;
-          top: 200px; }
-        #grid .container-boxes .box-1 #toggler:checked {
-          left: 178px;
-          top: 275px; }
-      #grid .container-boxes .box-2 {
-        width: 90vw;
-        height: 40vh;
-        margin-bottom: 10px;
-        position: relative; }
-      #grid .container-boxes .box-3 {
-        width: 90vw;
-        height: 40vh;
-        margin-bottom: 10px;
-        position: relative; }
-      #grid .container-boxes .box-4 {
-        width: 90vw;
-        height: 40vh;
-        margin-bottom: 10px;
-        position: relative; }
-      #grid .container-boxes .box-5 {
-        width: 90vw;
-        height: 40vh;
-        margin-bottom: 10px;
-        position: relative; }
+      #grid .container-boxes .box-1,
+      #grid .container-boxes .box-2,
+      #grid .container-boxes .box-3,
+      #grid .container-boxes .box-4,
+      #grid .container-boxes .box-5,
       #grid .container-boxes .box-6 {
-        width: 90vw;
-        height: 40vh;
-        margin-bottom: 10px;
+        margin-top: 10px;
         position: relative; }
+      #grid .container-boxes #toggler {
+        left: 178px;
+        top: 200px; }
+      #grid .container-boxes #toggler:checked {
+        left: 178px;
+        top: 275px; }
     #grid .container-boxes-1 {
       display: flex;
       flex-direction: column;
-      margin: auto -10px; }
+      margin: 10px 10px; }
       #grid .container-boxes-1 img {
         width: 100%; }
       #grid .container-boxes-1 .box-span {
@@ -241,20 +216,30 @@
         width: 50%; }
   #footer {
     margin: auto; }
-    #footer .foot-container {
+    #footer .container {
       margin: auto;
-      display: flex;
-      flex-direction: column; }
-      #footer .foot-container .f-box-1 h4 {
+      display: block; }
+      #footer .container .f-box-1 h4 {
         margin: auto; }
-      #footer .foot-container .f-box-1 i {
+      #footer .container .f-box-1 i {
         margin-top: 20px;
         margin-bottom: 20px; }
-      #footer .foot-container .f-box-2 li {
-        margin-top: 5px;
-        padding: 5px 0; }
-      #footer .foot-container .f-box-3 {
-        margin: auto; }
+      #footer .container .f-box-2 {
+        margin: 30px 0; }
+        #footer .container .f-box-2 li {
+          margin: 5px;
+          padding: 5px 0; }
+      #footer .container .f-box-3 > div {
+        padding: 0;
+        padding-left: 30px; }
+      #footer .container .f-box-3 p {
+        display: inline; }
+      #footer .container .f-box-3 div > span {
+        padding-left: 50px; }
+      #footer .container .f-box-3 .text-1 {
+        padding-left: 65px; }
+      #footer .container .f-box-3 .text-2 {
+        padding-left: 110px; }
   .foot-foot {
     display: flex;
     flex-direction: column;
