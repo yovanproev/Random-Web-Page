@@ -1,6 +1,7 @@
 @media (max-width: 500px) {
   #navbar {
     display: flex;
+    flex-direction: column;
     margin: auto; }
     #navbar .menu-wrap {
       margin: auto;
@@ -73,12 +74,11 @@
           display: flex;
           justify-content: center; }
     #navbar .menu-social {
-      position: relative;
+      position: absolute;
       margin: auto; }
     #navbar .menu-search-bar {
-      position: static;
       margin: auto;
-      margin-right: 20px; }
+      margin-left: 200px; }
       #navbar .menu-search-bar form {
         display: none; }
   #main-head {
@@ -110,7 +110,7 @@
       #main-head .container-head .hamburger > div {
         position: absolute;
         left: 300px;
-        top: 88px;
+        top: 80px;
         flex: none;
         width: 7.5%;
         height: 3px;
@@ -132,7 +132,7 @@
         top: 9px; }
       #main-head .container-head .toggler {
         position: absolute;
-        top: 75px;
+        top: 65px;
         left: 300px;
         z-index: 2;
         cursor: pointer;
@@ -161,14 +161,15 @@
         justify-content: center;
         z-index: 1; }
       #main-head .container-head img {
-        margin: 20px 0;
-        margin-left: 10px;
+        margin: 10px 0;
+        margin-left: 20px;
         height: 45px; }
   #showcase {
     width: 100%;
-    margin: auto; }
+    margin: auto;
+    padding-left: 10px; }
     #showcase .container-showcase {
-      margin: auto; }
+      padding: 20px; }
     #showcase .inside-container {
       margin: -10px auto;
       padding-bottom: 50px; }
@@ -184,14 +185,11 @@
       margin: auto;
       display: flex;
       flex-direction: column;
-      position: relative;
-      margin-bottom: -190px;
-      margin-top: 220px; }
+      position: relative; }
       #grid .container-boxes .box-1 {
-        width: 100vw;
+        width: 90vw;
         height: 40vh;
-        left: 0px;
-        top: -210px;
+        margin-bottom: 10px;
         position: relative; }
         #grid .container-boxes .box-1 #toggler {
           left: 178px;
@@ -200,41 +198,34 @@
           left: 178px;
           top: 275px; }
       #grid .container-boxes .box-2 {
-        width: 100vw;
+        width: 90vw;
         height: 40vh;
-        left: 0px;
-        top: -220px;
+        margin-bottom: 10px;
         position: relative; }
       #grid .container-boxes .box-3 {
-        width: 100vw;
+        width: 90vw;
         height: 40vh;
-        left: 0px;
-        top: -230px;
+        margin-bottom: 10px;
         position: relative; }
       #grid .container-boxes .box-4 {
-        width: 100vw;
+        width: 90vw;
         height: 40vh;
-        left: 0px;
-        top: -240px;
-        bottom: -120px;
+        margin-bottom: 10px;
         position: relative; }
       #grid .container-boxes .box-5 {
-        width: 100vw;
+        width: 90vw;
         height: 40vh;
-        left: 0px;
-        top: -230px;
-        bottom: -140px;
+        margin-bottom: 10px;
         position: relative; }
       #grid .container-boxes .box-6 {
-        width: 100vw;
+        width: 90vw;
         height: 40vh;
-        left: 0px;
-        top: -220px;
+        margin-bottom: 10px;
         position: relative; }
     #grid .container-boxes-1 {
       display: flex;
       flex-direction: column;
-      margin: auto; }
+      margin: auto -10px; }
       #grid .container-boxes-1 img {
         width: 100%; }
       #grid .container-boxes-1 .box-span {
@@ -254,12 +245,16 @@
       margin: auto;
       display: flex;
       flex-direction: column; }
+      #footer .foot-container .f-box-1 h4 {
+        margin: auto; }
       #footer .foot-container .f-box-1 i {
         margin-top: 20px;
         margin-bottom: 20px; }
       #footer .foot-container .f-box-2 li {
         margin-top: 5px;
         padding: 5px 0; }
+      #footer .foot-container .f-box-3 {
+        margin: auto; }
   .foot-foot {
     display: flex;
     flex-direction: column;

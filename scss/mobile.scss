@@ -3,6 +3,7 @@
 @media (max-width: 500px) {
   #navbar {
     display: flex;
+    flex-direction: column;
     margin: auto;
 
     .menu-wrap {
@@ -101,14 +102,13 @@
     }
 
     .menu-social {
-      position: relative;
+      position: absolute;
       margin: auto;
     }
 
     .menu-search-bar {
-      position: static;
       margin: auto;
-      margin-right: 20px;
+      margin-left: 200px;
 
       form {
         display: none;
@@ -152,7 +152,7 @@
       .hamburger > div {
         position: absolute;
         left: 300px;
-        top: 88px;
+        top: 80px;
         flex: none;
         width: 7.5%;
         height: 3px;
@@ -182,7 +182,7 @@
 
       .toggler {
         position: absolute;
-        top: 75px;
+        top: 65px;
         left: 300px;
         z-index: 2;
         cursor: pointer;
@@ -224,8 +224,8 @@
       }
 
       img {
-        margin: 20px 0;
-        margin-left: 10px;
+        margin: 10px 0;
+        margin-left: 20px;
         height: 45px;
       }
     }
@@ -234,9 +234,10 @@
   #showcase {
     width: 100%;
     margin: auto;
+    padding-left: 10px;
 
     .container-showcase {
-      margin: auto;
+      padding: 20px;
     }
 
     .inside-container {
@@ -263,14 +264,15 @@
       display: flex;
       flex-direction: column;
       position: relative;
-      margin-bottom: -190px;
-      margin-top: 220px;
+      // margin-bottom: -190px;
+      // margin-top: 220px;
 
       .box-1 {
-        width: 100vw;
+        width: 90vw;
         height: 40vh;
-        left: 0px;
-        top: -210px;
+        margin-bottom: 10px;
+        // left: 0px;
+        // top: -210px;
         position: relative;
 
         #toggler {
@@ -284,42 +286,47 @@
         }
       }
       .box-2 {
-        width: 100vw;
+        width: 90vw;
         height: 40vh;
-        left: 0px;
-        top: -220px;
+        margin-bottom: 10px;
+        // left: 0px;
+        // top: -220px;
         position: relative;
       }
       .box-3 {
-        width: 100vw;
+        width: 90vw;
         height: 40vh;
-        left: 0px;
-        top: -230px;
+        margin-bottom: 10px;
+        // left: 0px;
+        // top: -230px;
         position: relative;
       }
       .box-4 {
-        width: 100vw;
+        width: 90vw;
         height: 40vh;
-        left: 0px;
-        top: -240px;
-        bottom: -120px;
+        margin-bottom: 10px;
+        // left: 0px;
+        // top: -240px;
+        // bottom: -120px;
         position: relative;
       }
 
       .box-5 {
-        width: 100vw;
+        width: 90vw;
         height: 40vh;
-        left: 0px;
-        top: -230px;
-        bottom: -140px;
+        margin-bottom: 10px;
+        // left: 0px;
+        // top: -230px;
+        // bottom: -140px;
         position: relative;
       }
 
       .box-6 {
-        width: 100vw;
+        width: 90vw;
         height: 40vh;
-        left: 0px;
-        top: -220px;
+        margin-bottom: 10px;
+        // left: 0px;
+        // top: -220px;
         position: relative;
       }
     }
@@ -327,7 +334,7 @@
     .container-boxes-1 {
       display: flex;
       flex-direction: column;
-      margin: auto;
+      margin: auto -10px;
 
       img {
         width: 100%;
@@ -367,6 +374,10 @@
       flex-direction: column;
 
       .f-box-1 {
+        h4 {
+          margin: auto;
+        }
+
         i {
           margin-top: 20px;
           margin-bottom: 20px;
@@ -378,6 +389,10 @@
           margin-top: 5px;
           padding: 5px 0;
         }
+      }
+
+      .f-box-3 {
+        margin: auto;
       }
     }
   }
