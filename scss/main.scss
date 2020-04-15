@@ -220,13 +220,13 @@
 
       #toggler {
         position: absolute;
-        top: 205px;
-        left: 185px;
+        top: 60.5%;
+        left: 47.5%;
         z-index: 1;
         cursor: pointer;
         width: 20px;
         height: 20px;
-        opacity: 1;
+        opacity: 0;
         display: flex;
         flex-direction: column;
       }
@@ -240,7 +240,7 @@
       }
 
       #toggler:checked {
-        top: 270px;
+        top: 79%;
       }
 
       #toggler:checked ~ div {

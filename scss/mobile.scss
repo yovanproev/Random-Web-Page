@@ -291,13 +291,14 @@
       }
 
       .box-1 #toggler {
-        left: 205px;
-        top: 190px;
+        // margin: auto;
+        left: 48%;
+        top: 61%;
       }
 
       .box-1 #toggler:checked {
-        left: 204px;
-        top: 255px;
+        left: 48%;
+        top: 81%;
       }
     }
 
