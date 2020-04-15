@@ -10,10 +10,20 @@
   position: sticky;
   background: $nav-foot-color;
   z-index: 1;
-  display: grid;
-  grid-template-columns: repeat(3, 3fr);
-  margin: auto;
-  padding: 0 140px;
+  top: 0;
+  width: 100%;
+
+  .container {
+    padding: 5px 20px;
+    display: flex;
+    margin: auto;
+
+    .container-1 {
+      padding: 5px 20px;
+      display: flex;
+      margin: auto;
+    }
+  }
 
   .toggler {
     display: none;
@@ -38,8 +48,6 @@
 
   .menu-social {
     margin: auto;
-    padding: 10px 0;
-    padding-right: 15px;
 
     a {
       color: white;
@@ -50,29 +58,33 @@
   .menu-search-bar {
     display: flex;
     margin: auto;
+  }
 
-    i {
-      font-size: 12px;
-      margin: 3px 0;
-    }
+  i,
+  form {
+    color: white;
+    padding-left: 10px;
+  }
 
-    i,
-    form {
-      padding: 10px 3px;
-      color: white;
-    }
-
-    .btn {
-      border-radius: 20px;
-      border-width: 0;
-      height: 18px;
-    }
+  .btn {
+    border-radius: 20px;
+    border-width: 0;
+    height: 18px;
   }
 }
 
 #main-head {
-  margin: 20px auto;
-  margin-left: 190px;
+  margin: 20px;
+
+  .container {
+    padding: 20px 200px;
+    display: flex;
+
+    img {
+      height: 30px;
+      padding-right: 15px;
+    }
+  }
 
   .container-head {
     font-size: small;
@@ -80,11 +92,6 @@
 
     .toggler {
       display: none;
-    }
-
-    img {
-      height: 30px;
-      padding-right: 15px;
     }
 
     ul {
@@ -213,13 +220,13 @@
 
       #toggler {
         position: absolute;
-        top: 175px;
-        left: 130px;
+        top: 205px;
+        left: 185px;
         z-index: 1;
         cursor: pointer;
         width: 20px;
         height: 20px;
-        opacity: 0;
+        opacity: 1;
         display: flex;
         flex-direction: column;
       }
@@ -233,7 +240,7 @@
       }
 
       #toggler:checked {
-        top: 240px;
+        top: 270px;
       }
 
       #toggler:checked ~ div {

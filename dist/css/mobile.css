@@ -2,7 +2,14 @@
   #navbar {
     display: flex;
     flex-direction: column;
-    margin: auto; }
+    margin: auto;
+    top: 0;
+    width: 100%; }
+    #navbar .container {
+      margin: 10px auto;
+      width: 100%; }
+    #navbar .container-1 {
+      width: 100%; }
     #navbar .menu-wrap {
       margin: auto;
       /* Toggler Animation */
@@ -10,8 +17,8 @@
       /* Rotate On Hover When Checked */ }
       #navbar .menu-wrap .toggler {
         position: absolute;
-        top: 10px;
-        left: 10px;
+        top: 20px;
+        left: 20px;
         z-index: 2;
         cursor: pointer;
         width: 20px;
@@ -32,8 +39,8 @@
         /* Moves Line Down */ }
         #navbar .menu-wrap .container-navbar > div {
           position: absolute;
-          left: 11px;
-          top: 18.5px;
+          left: 20px;
+          top: 27px;
           flex: none;
           width: 4.5%;
           height: 2px;
@@ -73,16 +80,17 @@
         #navbar .menu-wrap .toggler:checked ~ div li {
           display: flex;
           justify-content: center; }
+    #navbar form {
+      display: none; }
     #navbar .menu-social {
-      position: absolute;
-      margin: auto; }
+      float: left; }
     #navbar .menu-search-bar {
-      margin: auto;
-      margin-right: -120px; }
-      #navbar .menu-search-bar form {
-        display: none; }
+      float: right;
+      right: 50px; }
   #main-head {
     margin: 10px auto; }
+    #main-head .container {
+      padding-left: 15px; }
     #main-head .container-head {
       margin: auto;
       /* Hamburger Line */
@@ -110,7 +118,7 @@
       #main-head .container-head .hamburger > div {
         position: absolute;
         right: 35px;
-        top: 80px;
+        top: 100px;
         flex: none;
         width: 7.5%;
         height: 3px;
@@ -166,6 +174,7 @@
         height: 45px; }
   #showcase {
     width: 100%;
+    height: 50%;
     margin: auto;
     padding-left: 10px; }
     #showcase .container-showcase {
@@ -191,12 +200,12 @@
       #grid .container-boxes .box-6 {
         margin-top: 10px;
         position: relative; }
-      #grid .container-boxes #toggler {
-        left: 178px;
-        top: 200px; }
-      #grid .container-boxes #toggler:checked {
-        left: 178px;
-        top: 275px; }
+      #grid .container-boxes .box-1 #toggler {
+        left: 205px;
+        top: 190px; }
+      #grid .container-boxes .box-1 #toggler:checked {
+        left: 204px;
+        top: 255px; }
     #grid .container-boxes-1 {
       display: flex;
       flex-direction: column;

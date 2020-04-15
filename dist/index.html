@@ -15,52 +15,61 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="stylesheet"
-      @media="screen and (max-width: 768px)"
+      @media="screen (min-width: 501px) and (max-width: 768px)"
+      href="./css/widescreen.css"
+    />
+    <link
+      rel="stylesheet"
+      @media="screen and (max-width: 500px)"
       href="./css/mobile.css"
     />
   </head>
   <body>
     <nav id="navbar">
-      <div class="menu-wrap">
-        <input type="checkbox" class="toggler" />
-        <div class="container-navbar"><div></div></div>
-        <div class="menu">
-          <div>
-            <ul>
-              <li><a href="#" class="">Home</a></li>
-              <li><a href="#" class="">About Us</a></li>
-              <li><a href="#" class="">Resources</a></li>
-              <li><a href="#" class="">Contact Us</a></li>
-            </ul>
+      <div class="container">
+        <div class="menu-wrap">
+          <input type="checkbox" class="toggler" />
+          <div class="container-navbar"><div></div></div>
+          <div class="menu">
+            <div>
+              <ul>
+                <li><a href="#" class="">Home</a></li>
+                <li><a href="#" class="">About Us</a></li>
+                <li><a href="#" class="">Resources</a></li>
+                <li><a href="#" class="">Contact Us</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="menu-social">
-        <a href="http://linkedin.com" target="_blank"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a href="http://twitter.com" target="_blank"
-          ><i class="fab fa-twitter"></i
-        ></a>
-        <a href="http://youtube.com" target="_blank"
-          ><i class="fab fa-youtube"></i
-        ></a>
-      </div>
-      <div class="menu-search-bar">
-        <a href="#" class=""><i class="fas fa-search"></i></a>
-        <form>
-          <input type="text" class="btn" />
-        </form>
+        <div class="container-1">
+          <div class="menu-social">
+            <a href="http://linkedin.com" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="http://twitter.com" target="_blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="http://youtube.com" target="_blank"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+          <div class="menu-search-bar">
+            <a href="#" class=""><i class="fas fa-search"></i></a>
+            <form>
+              <input type="text" class="btn" />
+            </form>
+          </div>
+        </div>
       </div>
     </nav>
 
     <header id="main-head">
-      <div class="container-head">
+      <div class="container">
         <img src="./img/logo.png" />
-        <input type="checkbox" class="toggler" />
-        <div class="hamburger"><div></div></div>
-        <div class="head-menu">
-          <div>
+        <div class="container-head">
+          <input type="checkbox" class="toggler" />
+          <div class="hamburger"><div></div></div>
+          <div class="head-menu">
             <div>
               <ul>
                 <li>

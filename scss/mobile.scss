@@ -5,14 +5,25 @@
     display: flex;
     flex-direction: column;
     margin: auto;
+    top: 0;
+    width: 100%;
+
+    .container {
+      margin: 10px auto;
+      width: 100%;
+    }
+
+    .container-1 {
+      width: 100%;
+    }
 
     .menu-wrap {
       margin: auto;
 
       .toggler {
         position: absolute;
-        top: 10px;
-        left: 10px;
+        top: 20px;
+        left: 20px;
         z-index: 2;
         cursor: pointer;
         width: 20px;
@@ -42,8 +53,8 @@
         /* Hamburger Line */
         > div {
           position: absolute;
-          left: 11px;
-          top: 18.5px;
+          left: 20px;
+          top: 27px;
           flex: none;
           width: 4.5%;
           height: 2px;
@@ -101,22 +112,25 @@
       }
     }
 
-    .menu-social {
-      position: absolute;
-      margin: auto;
+    form {
+      display: none;
     }
 
+    .menu-social {
+      float: left;
+    }
     .menu-search-bar {
-      margin: auto;
-      margin-right: -120px;
-      form {
-        display: none;
-      }
+      float: right;
+      right: 50px;
     }
   }
 
   #main-head {
     margin: 10px auto;
+
+    .container {
+      padding-left: 15px;
+    }
 
     .container-head {
       margin: auto;
@@ -151,7 +165,7 @@
       .hamburger > div {
         position: absolute;
         right: 35px;
-        top: 80px;
+        top: 100px;
         flex: none;
         width: 7.5%;
         height: 3px;
@@ -232,6 +246,7 @@
 
   #showcase {
     width: 100%;
+    height: 50%;
     margin: auto;
     padding-left: 10px;
 
@@ -275,14 +290,14 @@
         @extend %box-shared;
       }
 
-      #toggler {
-        left: 178px;
-        top: 200px;
+      .box-1 #toggler {
+        left: 205px;
+        top: 190px;
       }
 
-      #toggler:checked {
-        left: 178px;
-        top: 275px;
+      .box-1 #toggler:checked {
+        left: 204px;
+        top: 255px;
       }
     }
 

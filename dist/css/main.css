@@ -7,10 +7,16 @@
   position: sticky;
   background: #494949;
   z-index: 1;
-  display: grid;
-  grid-template-columns: repeat(3, 3fr);
-  margin: auto;
-  padding: 0 140px; }
+  top: 0;
+  width: 100%; }
+  #navbar .container {
+    padding: 5px 20px;
+    display: flex;
+    margin: auto; }
+    #navbar .container .container-1 {
+      padding: 5px 20px;
+      display: flex;
+      margin: auto; }
   #navbar .toggler {
     display: none; }
   #navbar .menu-wrap {
@@ -23,38 +29,35 @@
         text-decoration: none;
         color: white; }
   #navbar .menu-social {
-    margin: auto;
-    padding: 10px 0;
-    padding-right: 15px; }
+    margin: auto; }
     #navbar .menu-social a {
       color: white;
       padding: 0 10px; }
   #navbar .menu-search-bar {
     display: flex;
     margin: auto; }
-    #navbar .menu-search-bar i {
-      font-size: 12px;
-      margin: 3px 0; }
-    #navbar .menu-search-bar i,
-    #navbar .menu-search-bar form {
-      padding: 10px 3px;
-      color: white; }
-    #navbar .menu-search-bar .btn {
-      border-radius: 20px;
-      border-width: 0;
-      height: 18px; }
+  #navbar i,
+  #navbar form {
+    color: white;
+    padding-left: 10px; }
+  #navbar .btn {
+    border-radius: 20px;
+    border-width: 0;
+    height: 18px; }
 
 #main-head {
-  margin: 20px auto;
-  margin-left: 190px; }
+  margin: 20px; }
+  #main-head .container {
+    padding: 20px 200px;
+    display: flex; }
+    #main-head .container img {
+      height: 30px;
+      padding-right: 15px; }
   #main-head .container-head {
     font-size: small;
     display: flex; }
     #main-head .container-head .toggler {
       display: none; }
-    #main-head .container-head img {
-      height: 30px;
-      padding-right: 15px; }
     #main-head .container-head ul {
       list-style: none; }
       #main-head .container-head ul li {
@@ -131,13 +134,13 @@
       background: #015871; }
       #grid .container-boxes .box-1 #toggler {
         position: absolute;
-        top: 175px;
-        left: 130px;
+        top: 205px;
+        left: 185px;
         z-index: 1;
         cursor: pointer;
         width: 20px;
         height: 20px;
-        opacity: 0;
+        opacity: 1;
         display: flex;
         flex-direction: column; }
       #grid .container-boxes .box-1 .fa-plus-square {
@@ -145,7 +148,7 @@
       #grid .container-boxes .box-1 .fa-minus-square {
         top: 225px; }
       #grid .container-boxes .box-1 #toggler:checked {
-        top: 240px; }
+        top: 270px; }
       #grid .container-boxes .box-1 #toggler:checked ~ div {
         display: flex;
         flex-direction: column;
