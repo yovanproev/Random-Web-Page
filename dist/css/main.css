@@ -48,7 +48,7 @@
 #main-head {
   margin: 20px; }
   #main-head .container {
-    padding: 20px 200px;
+    padding: 20px 160px;
     display: flex; }
     #main-head .container img {
       height: 30px;
@@ -97,9 +97,9 @@
 
 #showcase {
   background: url(../img/featured.jpg) no-repeat center center/cover;
-  height: 40vh; }
+  height: 40%; }
   #showcase .container-showcase {
-    padding: 70px 150px; }
+    padding: 60px 150px; }
   #showcase .inside-container {
     color: white;
     padding: 30px 10px;
