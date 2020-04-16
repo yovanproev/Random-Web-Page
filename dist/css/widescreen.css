@@ -26,28 +26,20 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      justify-content: center;
-      align-self: center;
-      align-content: center;
       align-items: center; }
       #main-head .container img {
         height: 60%;
         width: 60%;
         padding: 20px 15px; }
-      #main-head .container .container-head {
-        font-size: small;
-        display: flex;
-        flex-direction: column;
-        width: 30%; }
-        #main-head .container .container-head li:nth-child(1n) {
-          border-right: none;
-          height: 45px; }
-        #main-head .container .container-head .toggler {
-          display: none; }
-        #main-head .container .container-head ul {
-          list-style: none; }
-          #main-head .container .container-head ul li {
-            display: inline-block; }
+      #main-head .container .container-head li:nth-child(1n) {
+        border-right: none;
+        height: 45px; }
+      #main-head .container .container-head .toggler {
+        display: none; }
+      #main-head .container .container-head ul {
+        list-style: none; }
+        #main-head .container .container-head ul li {
+          display: inline-block; }
       #main-head .container .menu-social {
         margin-left: -100px; }
   #showcase .container-showcase {
@@ -64,11 +56,41 @@
     #grid .container-boxes .box-5,
     #grid .container-boxes .box-6 {
       padding: 70px; }
+    #grid .container-boxes-1 h3 {
+      font-size: 0.8rem; }
     #grid .container-boxes-1 .box-7,
     #grid .container-boxes-1 .box-8,
     #grid .container-boxes-1 .box-9 {
       padding: 0px; }
+      #grid .container-boxes-1 .box-7 .box-7 > div,
+      #grid .container-boxes-1 .box-8 .box-7 > div,
+      #grid .container-boxes-1 .box-9 .box-7 > div {
+        padding-left: 10px; }
+      #grid .container-boxes-1 .box-7 .calendar,
+      #grid .container-boxes-1 .box-8 .calendar,
+      #grid .container-boxes-1 .box-9 .calendar {
+        width: 50%; }
+        #grid .container-boxes-1 .box-7 .calendar > div,
+        #grid .container-boxes-1 .box-8 .calendar > div,
+        #grid .container-boxes-1 .box-9 .calendar > div {
+          width: 100%; }
   #footer .container {
     display: inline; }
     #footer .container .f-box-1 > div {
-      width: 100%; } }
+      width: 100%; }
+    #footer .container .f-box-3 {
+      width: 100%; }
+      #footer .container .f-box-3 .text-img {
+        width: 70%; }
+      #footer .container .f-box-3 .text {
+        padding: 0;
+        width: 30%; } }
+
+@media (min-width: 502px) and (max-width: 840px) {
+  #main-head .container .container-head ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    #main-head .container .container-head ul li {
+      justify-content: center;
+      display: flex; } }

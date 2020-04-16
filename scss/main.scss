@@ -77,8 +77,9 @@
   margin: 20px;
 
   .container {
-    padding: 20px 160px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     img {
       height: 30px;
@@ -535,7 +536,7 @@
     > div {
       border: white ridge;
       border-width: 2px;
-      height: 60%;
+      height: 50%;
       width: 250px;
       padding: 60px;
       text-align: center;

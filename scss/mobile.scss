@@ -128,7 +128,7 @@
   }
 
   #main-head {
-    margin: 10px auto;
+    margin: 20px auto;
 
     .container {
       padding-left: 15px;
@@ -196,8 +196,8 @@
 
       .toggler {
         position: absolute;
-        top: 65px;
-        right: 35px;
+        top: 86px;
+        right: 37px;
         z-index: 2;
         cursor: pointer;
         width: 30px;
@@ -425,8 +425,16 @@
       padding-top: 0;
     }
 
-    .text-1 {
+    .text-0 {
       padding-top: 25px;
+    }
+
+    .text-1 {
+      padding-top: 38px;
+    }
+
+    .text-2 {
+      padding-top: 33px;
     }
   }
 }
@@ -434,12 +442,12 @@
 @media (max-width: 396px) {
   #footer .container .f-box-3 .container .text-img,
   .text {
-    .text-0 {
-      margin-top: -17px;
+    .text-1 {
+      padding-top: 45px;
     }
 
     .text-2 {
-      padding-top: 25px;
+      padding-top: 50px;
     }
   }
 }

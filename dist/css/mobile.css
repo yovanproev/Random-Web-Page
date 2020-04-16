@@ -90,7 +90,7 @@
     #navbar .menu-search-bar {
       width: 10%; }
   #main-head {
-    margin: 10px auto; }
+    margin: 20px auto; }
     #main-head .container {
       padding-left: 15px; }
     #main-head .container-head {
@@ -141,8 +141,8 @@
         top: 10px; }
       #main-head .container-head .toggler {
         position: absolute;
-        top: 65px;
-        right: 35px;
+        top: 86px;
+        right: 37px;
         z-index: 2;
         cursor: pointer;
         width: 30px;
@@ -276,14 +276,20 @@
   #footer .container .f-box-3 .container .text-img p,
   .text p {
     padding-top: 0; }
-  #footer .container .f-box-3 .container .text-img .text-1,
-  .text .text-1 {
-    padding-top: 25px; } }
-
-@media (max-width: 396px) {
   #footer .container .f-box-3 .container .text-img .text-0,
   .text .text-0 {
-    margin-top: -17px; }
+    padding-top: 25px; }
+  #footer .container .f-box-3 .container .text-img .text-1,
+  .text .text-1 {
+    padding-top: 38px; }
   #footer .container .f-box-3 .container .text-img .text-2,
   .text .text-2 {
-    padding-top: 25px; } }
+    padding-top: 33px; } }
+
+@media (max-width: 396px) {
+  #footer .container .f-box-3 .container .text-img .text-1,
+  .text .text-1 {
+    padding-top: 45px; }
+  #footer .container .f-box-3 .container .text-img .text-2,
+  .text .text-2 {
+    padding-top: 50px; } }
