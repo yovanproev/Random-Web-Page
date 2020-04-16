@@ -183,8 +183,7 @@
       .hamburger > div::after {
         content: "";
         position: absolute;
-        z-index: 1;
-        top: -9px;
+        top: -10px;
         width: 100%;
         height: 3px;
         background: inherit;
@@ -192,7 +191,7 @@
 
       /* Moves Line Down */
       .hamburger > div::after {
-        top: 9px;
+        top: 10px;
       }
 
       .toggler {
