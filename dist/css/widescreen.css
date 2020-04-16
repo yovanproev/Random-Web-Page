@@ -18,3 +18,7 @@
             display: inline-block; }
       #main-head .container .menu-social {
         margin-left: -100px; } }
+
+@media (max-width: 410px) {
+  #footer .container .f-box-3 .container .text p {
+    padding-top: 0; } }

@@ -410,3 +410,31 @@
     }
   }
 }
+
+@media (min-width: 396px) and (max-width: 410px) {
+  #footer .container .f-box-3 .container .text-img,
+  .text {
+    p {
+      padding-top: 0;
+    }
+
+    .text-1 {
+      padding-top: 25px;
+    }
+  }
+}
+
+@media (max-width: 396px) {
+  #footer .container .f-box-3 .container .text-img,
+  .text {
+    .text-0 {
+      margin-top: -17px;
+    }
+    .text-1 {
+    }
+
+    .text-2 {
+      padding-top: 25px;
+    }
+  }
+}
