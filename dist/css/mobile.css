@@ -8,8 +8,9 @@
     #navbar .container {
       margin: 10px auto;
       width: 100%; }
-    #navbar .container-1 {
-      width: 100%; }
+      #navbar .container .container-1 {
+        width: 100%;
+        padding-right: 0; }
     #navbar .menu-wrap {
       margin: auto;
       /* Toggler Animation */
@@ -83,10 +84,11 @@
     #navbar form {
       display: none; }
     #navbar .menu-social {
-      float: left; }
+      width: 90%;
+      display: flex;
+      justify-content: center; }
     #navbar .menu-search-bar {
-      float: right;
-      right: 50px; }
+      width: 10%; }
   #main-head {
     margin: 10px auto; }
     #main-head .container {
@@ -229,6 +231,8 @@
     #footer .container {
       margin: auto;
       display: block; }
+      #footer .container .f-box-1 > div {
+        width: 100%; }
       #footer .container .f-box-1 h4 {
         margin: auto; }
       #footer .container .f-box-1 i {
@@ -238,9 +242,18 @@
         #footer .container .f-box-2 li {
           margin: 5px;
           padding: 5px 0; }
-      #footer .container .f-box-3 .text-image {
-        display: inline-block;
-        flex-direction: column; }
+      #footer .container .f-box-3 {
+        display: inline; }
+        #footer .container .f-box-3 .text-img {
+          width: 50%;
+          padding-left: 10px; }
+          #footer .container .f-box-3 .text-img .fas {
+            display: none; }
+        #footer .container .f-box-3 .text {
+          word-wrap: break-word;
+          width: 100%;
+          text-align: right;
+          padding-right: 10px; }
   .foot-foot {
     display: flex;
     flex-direction: column;
