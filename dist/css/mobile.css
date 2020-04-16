@@ -246,14 +246,17 @@
         display: inline; }
         #footer .container .f-box-3 .text-img {
           width: 50%;
-          padding-left: 10px; }
+          padding-left: 10px;
+          word-wrap: break-word; }
           #footer .container .f-box-3 .text-img .fas {
             display: none; }
         #footer .container .f-box-3 .text {
           word-wrap: break-word;
           width: 100%;
           text-align: right;
-          padding-right: 10px; }
+          margin: auto;
+          width: 40%;
+          padding-top: 0; }
   .foot-foot {
     display: flex;
     flex-direction: column;

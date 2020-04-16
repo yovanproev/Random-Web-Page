@@ -587,12 +587,28 @@
       text-align: left;
       width: 60%;
 
+      i,
+      p {
+        padding-top: 20px;
+      }
+
       > span {
         display: flex;
 
         i {
           padding-right: 10px;
         }
+      }
+    }
+
+    .text {
+      i,
+      p {
+        padding-top: 20px;
+      }
+
+      .text-1 {
+        padding-top: 35px;
       }
     }
 

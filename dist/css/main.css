@@ -386,10 +386,18 @@
     #footer .f-box-3 .text-img {
       text-align: left;
       width: 60%; }
+      #footer .f-box-3 .text-img i,
+      #footer .f-box-3 .text-img p {
+        padding-top: 20px; }
       #footer .f-box-3 .text-img > span {
         display: flex; }
         #footer .f-box-3 .text-img > span i {
           padding-right: 10px; }
+    #footer .f-box-3 .text i,
+    #footer .f-box-3 .text p {
+      padding-top: 20px; }
+    #footer .f-box-3 .text .text-1 {
+      padding-top: 35px; }
     #footer .f-box-3 i {
       font-size: 30px; }
     #footer .f-box-3 .text {
