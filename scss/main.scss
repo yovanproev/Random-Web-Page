@@ -602,6 +602,13 @@
     }
 
     .text {
+      text-align: left;
+      width: 30%;
+
+      .text-p {
+        padding-top: 27px;
+      }
+
       i,
       p {
         padding-top: 20px;
@@ -614,11 +621,6 @@
 
     i {
       font-size: 30px;
-    }
-
-    .text {
-      text-align: left;
-      width: 30%;
     }
   }
 }
