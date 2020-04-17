@@ -444,3 +444,21 @@
     }
   }
 }
+
+@media (max-width: 324px) {
+  #footer {
+    .container {
+      .f-box-3 {
+        .container {
+          .text-img {
+            width: 60%;
+          }
+
+          .text {
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+}
