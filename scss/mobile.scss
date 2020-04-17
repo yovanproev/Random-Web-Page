@@ -445,6 +445,23 @@
   }
 }
 
+@media (max-width: 327px) {
+  #footer {
+    .container {
+      .f-box-3 {
+        .container {
+          .text-img {
+          }
+
+          .text {
+            margin-top: 17px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 324px) {
   #footer {
     .container {
