@@ -419,3 +419,28 @@
     }
   }
 }
+
+@media (max-width: 345px) {
+  #footer {
+    .container {
+      .f-box-3 {
+        .container {
+          .text-img {
+            width: 60%;
+          }
+
+          .text-img,
+          .text {
+            .text-1 {
+              padding-top: 20px;
+            }
+
+            .text-2 {
+              padding-top: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
