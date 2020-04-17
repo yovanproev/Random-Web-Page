@@ -295,7 +295,12 @@
     #grid .container-boxes-1 .box-8,
     #grid .container-boxes-1 .box-9 {
       background: white;
-      padding: 10px; }
+      padding: 10px;
+      text-align: center; }
+      #grid .container-boxes-1 .container-boxes .box-1 h3, #grid .container-boxes .container-boxes-1 .box-1 h3, #grid .container-boxes-1 .container-boxes .box-2 h3, #grid .container-boxes .container-boxes-1 .box-2 h3, #grid .container-boxes-1 .container-boxes .box-3 h3, #grid .container-boxes .container-boxes-1 .box-3 h3, #grid .container-boxes-1 .container-boxes .box-4 h3, #grid .container-boxes .container-boxes-1 .box-4 h3, #grid .container-boxes-1 .container-boxes .box-5 h3, #grid .container-boxes .container-boxes-1 .box-5 h3, #grid .container-boxes-1 .container-boxes .box-6 h3, #grid .container-boxes .container-boxes-1 .box-6 h3, #grid .container-boxes-1 .box-7 h3, #grid .container-boxes-1 .box-8 h3, #grid .container-boxes-1 .box-9 h3 {
+        text-align: left; }
+      #grid .container-boxes-1 .container-boxes .box-1 p, #grid .container-boxes .container-boxes-1 .box-1 p, #grid .container-boxes-1 .container-boxes .box-2 p, #grid .container-boxes .container-boxes-1 .box-2 p, #grid .container-boxes-1 .container-boxes .box-3 p, #grid .container-boxes .container-boxes-1 .box-3 p, #grid .container-boxes-1 .container-boxes .box-4 p, #grid .container-boxes .container-boxes-1 .box-4 p, #grid .container-boxes-1 .container-boxes .box-5 p, #grid .container-boxes .container-boxes-1 .box-5 p, #grid .container-boxes-1 .container-boxes .box-6 p, #grid .container-boxes .container-boxes-1 .box-6 p, #grid .container-boxes-1 .box-7 p, #grid .container-boxes-1 .box-8 p, #grid .container-boxes-1 .box-9 p {
+        text-align: left; }
       #grid .container-boxes-1 .container-boxes .box-1 .calendar, #grid .container-boxes .container-boxes-1 .box-1 .calendar, #grid .container-boxes-1 .container-boxes .box-2 .calendar, #grid .container-boxes .container-boxes-1 .box-2 .calendar, #grid .container-boxes-1 .container-boxes .box-3 .calendar, #grid .container-boxes .container-boxes-1 .box-3 .calendar, #grid .container-boxes-1 .container-boxes .box-4 .calendar, #grid .container-boxes .container-boxes-1 .box-4 .calendar, #grid .container-boxes-1 .container-boxes .box-5 .calendar, #grid .container-boxes .container-boxes-1 .box-5 .calendar, #grid .container-boxes-1 .container-boxes .box-6 .calendar, #grid .container-boxes .container-boxes-1 .box-6 .calendar, #grid .container-boxes-1 .box-7 .calendar, #grid .container-boxes-1 .box-8 .calendar, #grid .container-boxes-1 .box-9 .calendar {
         top: 10px;
         width: 50px;
@@ -306,7 +311,8 @@
         margin-bottom: 15px;
         background: darkblue;
         padding-left: 20px;
-        border-radius: 15px; }
+        border-radius: 15px;
+        text-align: left; }
       #grid .container-boxes-1 .container-boxes .box-1 .calendar-box-1, #grid .container-boxes .container-boxes-1 .box-1 .calendar-box-1, #grid .container-boxes-1 .container-boxes .box-2 .calendar-box-1, #grid .container-boxes .container-boxes-1 .box-2 .calendar-box-1, #grid .container-boxes-1 .container-boxes .box-3 .calendar-box-1, #grid .container-boxes .container-boxes-1 .box-3 .calendar-box-1, #grid .container-boxes-1 .container-boxes .box-4 .calendar-box-1, #grid .container-boxes .container-boxes-1 .box-4 .calendar-box-1, #grid .container-boxes-1 .container-boxes .box-5 .calendar-box-1, #grid .container-boxes .container-boxes-1 .box-5 .calendar-box-1, #grid .container-boxes-1 .container-boxes .box-6 .calendar-box-1, #grid .container-boxes .container-boxes-1 .box-6 .calendar-box-1, #grid .container-boxes-1 .box-7 .calendar-box-1, #grid .container-boxes-1 .box-8 .calendar-box-1, #grid .container-boxes-1 .box-9 .calendar-box-1 {
         margin: 0px -3px;
         margin-top: -9px; }
@@ -321,16 +327,28 @@
         right: 10px;
         width: 2.5vw;
         margin: -9px 0px; }
+      #grid .container-boxes-1 .container-boxes .box-1 .far, #grid .container-boxes .container-boxes-1 .box-1 .far, #grid .container-boxes-1 .container-boxes .box-2 .far, #grid .container-boxes .container-boxes-1 .box-2 .far, #grid .container-boxes-1 .container-boxes .box-3 .far, #grid .container-boxes .container-boxes-1 .box-3 .far, #grid .container-boxes-1 .container-boxes .box-4 .far, #grid .container-boxes .container-boxes-1 .box-4 .far, #grid .container-boxes-1 .container-boxes .box-5 .far, #grid .container-boxes .container-boxes-1 .box-5 .far, #grid .container-boxes-1 .container-boxes .box-6 .far, #grid .container-boxes .container-boxes-1 .box-6 .far, #grid .container-boxes-1 .box-7 .far, #grid .container-boxes-1 .box-8 .far, #grid .container-boxes-1 .box-9 .far,
+      #grid .container-boxes-1 .container-boxes .box-1 a,
+      #grid .container-boxes .container-boxes-1 .box-1 a,
+      #grid .container-boxes-1 .container-boxes .box-2 a,
+      #grid .container-boxes .container-boxes-1 .box-2 a,
+      #grid .container-boxes-1 .container-boxes .box-3 a,
+      #grid .container-boxes .container-boxes-1 .box-3 a,
+      #grid .container-boxes-1 .container-boxes .box-4 a,
+      #grid .container-boxes .container-boxes-1 .box-4 a,
+      #grid .container-boxes-1 .container-boxes .box-5 a,
+      #grid .container-boxes .container-boxes-1 .box-5 a,
+      #grid .container-boxes-1 .container-boxes .box-6 a,
+      #grid .container-boxes .container-boxes-1 .box-6 a,
+      #grid .container-boxes-1 .box-7 a,
+      #grid .container-boxes-1 .box-8 a,
+      #grid .container-boxes-1 .box-9 a {
+        padding-top: 30px;
+        padding-bottom: 10px;
+        text-decoration: none;
+        color: darkblue; }
     #grid .container-boxes-1 .box-span {
       font-weight: bold; }
-    #grid .container-boxes-1 .far,
-    #grid .container-boxes-1 a {
-      padding-top: 30px;
-      padding-bottom: 10px;
-      text-decoration: none;
-      color: darkblue;
-      text-align: center;
-      align-content: center; }
   #grid .clients-img {
     display: flex;
     flex: 1;
@@ -345,21 +363,21 @@
 #footer {
   background: darkblue;
   color: white;
-  padding: 20px 150px; }
+  padding: 10px 150px; }
   #footer .container {
-    display: flex;
     line-height: 1.5rem; }
+    #footer .container > div {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      text-align: center; }
   #footer .f-box-1 {
-    text-align: center;
-    padding: 40px;
-    margin-top: 50px; }
+    margin-top: 50px;
+    font-size: 0.7rem; }
     #footer .f-box-1 > div {
       border: white ridge;
       border-width: 2px;
-      height: 50%;
-      width: 250px;
-      padding: 60px;
-      text-align: center; }
+      height: 100px;
+      padding-top: 35px; }
     #footer .f-box-1 a {
       padding: 0 10px; }
     #footer .f-box-1 i {
@@ -367,8 +385,10 @@
       margin-top: 45px; }
   #footer .f-box-2 {
     text-align: center;
-    margin: 0 100px;
-    padding: 40px; }
+    margin: auto;
+    padding: 40px;
+    margin-top: 0px;
+    font-size: 0.7rem; }
     #footer .f-box-2 ul {
       list-style: none; }
       #footer .f-box-2 ul li {
@@ -378,15 +398,16 @@
           text-decoration: none; }
   #footer .f-box-3 {
     padding: 40px;
-    width: 80%; }
+    width: 100%;
+    font-size: 0.7rem; }
     #footer .f-box-3 .container {
       display: flex; }
     #footer .f-box-3 h3 {
-      text-align: center;
-      margin-bottom: 20px; }
+      text-align: center; }
     #footer .f-box-3 .text-img {
       text-align: left;
-      width: 60%; }
+      display: block;
+      width: 40%; }
       #footer .f-box-3 .text-img i,
       #footer .f-box-3 .text-img p {
         padding-top: 20px; }
@@ -395,15 +416,17 @@
         #footer .f-box-3 .text-img > span i {
           padding-right: 10px; }
     #footer .f-box-3 .text {
-      text-align: left;
-      width: 30%; }
+      text-align-last: left;
+      padding-left: 20px;
+      display: block;
+      width: 60%; }
       #footer .f-box-3 .text .text-p {
         padding-top: 27px; }
       #footer .f-box-3 .text i,
       #footer .f-box-3 .text p {
         padding-top: 20px; }
       #footer .f-box-3 .text .text-3 {
-        padding-top: 35px; }
+        padding-top: 25px; }
     #footer .f-box-3 i {
       font-size: 30px; }
 

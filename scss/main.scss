@@ -453,6 +453,15 @@
     %box-shared {
       background: white;
       padding: 10px;
+      text-align: center;
+
+      h3 {
+        text-align: left;
+      }
+
+      p {
+        text-align: left;
+      }
 
       .calendar {
         top: 10px;
@@ -465,6 +474,7 @@
         background: $primary-color;
         padding-left: 20px;
         border-radius: 15px;
+        text-align: left;
       }
 
       .calendar-box-1 {
@@ -486,20 +496,18 @@
         width: 2.5vw;
         margin: -9px 0px;
       }
+
+      .far,
+      a {
+        padding-top: 30px;
+        padding-bottom: 10px;
+        text-decoration: none;
+        color: $primary-color;
+      }
     }
 
     .box-span {
       font-weight: bold;
-    }
-
-    .far,
-    a {
-      padding-top: 30px;
-      padding-bottom: 10px;
-      text-decoration: none;
-      color: $primary-color;
-      text-align: center;
-      align-content: center;
     }
   }
 
@@ -521,25 +529,27 @@
 #footer {
   background: $primary-color;
   color: white;
-  padding: 20px 150px;
+  padding: 10px 150px;
 
   .container {
-    display: flex;
     line-height: 1.5rem;
+
+    > div {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      text-align: center;
+    }
   }
 
   .f-box-1 {
-    text-align: center;
-    padding: 40px;
     margin-top: 50px;
+    font-size: 0.7rem;
 
     > div {
       border: white ridge;
       border-width: 2px;
-      height: 50%;
-      width: 250px;
-      padding: 60px;
-      text-align: center;
+      height: 100px;
+      padding-top: 35px;
     }
 
     a {
@@ -554,8 +564,10 @@
 
   .f-box-2 {
     text-align: center;
-    margin: 0 100px;
+    margin: auto;
     padding: 40px;
+    margin-top: 0px;
+    font-size: 0.7rem;
 
     ul {
       list-style: none;
@@ -573,7 +585,8 @@
 
   .f-box-3 {
     padding: 40px;
-    width: 80%;
+    width: 100%;
+    font-size: 0.7rem;
 
     .container {
       display: flex;
@@ -581,12 +594,12 @@
 
     h3 {
       text-align: center;
-      margin-bottom: 20px;
     }
 
     .text-img {
       text-align: left;
-      width: 60%;
+      display: block;
+      width: 40%;
 
       i,
       p {
@@ -603,8 +616,10 @@
     }
 
     .text {
-      text-align: left;
-      width: 30%;
+      text-align-last: left;
+      padding-left: 20px;
+      display: block;
+      width: 60%;
 
       .text-p {
         padding-top: 27px;
@@ -616,7 +631,7 @@
       }
 
       .text-3 {
-        padding-top: 35px;
+        padding-top: 25px;
       }
     }
 
