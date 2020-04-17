@@ -278,7 +278,7 @@
 
 @media (max-width: 350px) {
   #footer .container .f-box-3 .container .text-img {
-    width: 60%; }
+    width: 100%; }
   #footer .container .f-box-3 .container .text-img .text-1,
   #footer .container .f-box-3 .container .text .text-1 {
     padding-top: 20px; }
