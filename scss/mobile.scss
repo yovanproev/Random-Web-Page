@@ -363,7 +363,7 @@
 
       .f-box-3 {
         grid-area: f-box-3;
-        padding-left: 90px;
+        padding-left: 50px;
       }
     }
   }
@@ -407,7 +407,7 @@
   }
 }
 
-@media (max-width: 396px) {
+@media (max-width: 410px) {
   #footer .container .f-box-3 .container .text-img,
   .text {
     .text-1 {
