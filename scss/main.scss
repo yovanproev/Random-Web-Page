@@ -349,16 +349,16 @@
         repeat-x;
       position: absolute;
       top: 60px;
-      width: 500px;
-      height: 298px;
-      left: 300px;
+      width: 1200px;
+      height: 100%;
+      left: 350px;
       animation: wave 5s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
       transform: translate3d(0, 0, 0);
     }
 
     .wave:nth-of-type(2) {
-      top: 60px;
-      animation: wave 8s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+      top: 100px;
+      animation: wave 5s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
         swell 2s ease -1.25s infinite;
       opacity: 1;
     }
@@ -369,8 +369,8 @@
         margin-top: 45px;
       }
       100% {
-        margin-left: -300px;
-        margin-top: -10px;
+        margin-left: -500px;
+        margin-top: -20px;
       }
     }
 
