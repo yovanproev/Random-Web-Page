@@ -73,7 +73,7 @@
         top: 0px;
         left: -1px;
         height: 100%;
-        background: rgba(153, 151, 151, 0.5);
+        background: rgba(0, 0, 0, 0.8);
         width: 100%;
         text-align: center;
         position: fixed;
@@ -107,8 +107,7 @@
       #main-head .container-head .head-menu {
         display: none; }
         #main-head .container-head .head-menu > div {
-          height: 50vh;
-          margin-top: -100px; }
+          height: 50vh; }
           #main-head .container-head .head-menu > div ul {
             display: flex;
             justify-content: center;
@@ -116,14 +115,12 @@
             #main-head .container-head .head-menu > div ul li {
               border: none; }
         #main-head .container-head .head-menu > div a {
-          color: darkblue;
-          font-size: 0.7rem;
-          font-weight: bold;
-          margin: auto; }
+          color: white;
+          font-size: 0.9rem;
+          font-weight: 200; }
       #main-head .container-head .hamburger > div {
         position: absolute;
         right: 35px;
-        top: 88px;
         flex: none;
         width: 7.5%;
         height: 3px;
@@ -166,12 +163,14 @@
         top: 0px;
         left: -1px;
         height: 100%;
-        background: rgba(153, 151, 151, 0.5);
+        background: rgba(0, 0, 0, 0.8);
         width: 100%;
+        height: 100%;
         text-align: center;
-        position: absolute;
+        position: fixed;
         justify-content: center;
-        z-index: 1; }
+        z-index: 1;
+        margin: auto; }
       #main-head .container-head img {
         margin: 10px 0;
         margin-left: 20px;
