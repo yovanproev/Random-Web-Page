@@ -166,7 +166,6 @@
       .hamburger > div {
         position: absolute;
         right: 35px;
-
         flex: none;
         width: 7.5%;
         height: 3px;
@@ -203,6 +202,10 @@
         height: 30px;
         opacity: 0;
         display: flex;
+      }
+
+      .toggler:checked {
+        position: fixed;
       }
 
       /* Toggler Animation */

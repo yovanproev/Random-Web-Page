@@ -147,6 +147,8 @@
         height: 30px;
         opacity: 0;
         display: flex; }
+      #main-head .container-head .toggler:checked {
+        position: fixed; }
       #main-head .container-head .toggler:checked + .hamburger > div {
         transform: rotate(135deg); }
       #main-head .container-head .toggler:checked + .hamburger > div:before,
