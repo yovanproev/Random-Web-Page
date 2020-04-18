@@ -106,14 +106,12 @@
       /* Rotate On Hover When Checked */ }
       #main-head .container-head .head-menu {
         display: none; }
-        #main-head .container-head .head-menu > div {
-          height: 50vh; }
-          #main-head .container-head .head-menu > div ul {
-            display: flex;
-            justify-content: center;
-            flex-direction: column; }
-            #main-head .container-head .head-menu > div ul li {
-              border: none; }
+        #main-head .container-head .head-menu ul {
+          display: flex;
+          justify-content: center;
+          flex-direction: column; }
+          #main-head .container-head .head-menu ul li {
+            border: none; }
         #main-head .container-head .head-menu > div a {
           color: white;
           font-size: 0.9rem;
@@ -124,7 +122,7 @@
         flex: none;
         width: 7.5%;
         height: 3px;
-        background: darkblue;
+        background: red;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -157,20 +155,20 @@
         transform: rotate(90deg); }
       #main-head .container-head .toggler:checked:hover + .hamburger > div {
         transform: rotate(225deg); }
+      #main-head .container-head .toggler:checked + .hamburger > div {
+        top: 95px; }
       #main-head .container-head .toggler:checked ~ div {
         display: flex;
         flex-direction: column;
         top: 0px;
         left: -1px;
-        height: 100%;
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 0.7);
         width: 100%;
         height: 100%;
         text-align: center;
         position: fixed;
         justify-content: center;
-        z-index: 1;
-        margin: auto; }
+        z-index: 1; }
       #main-head .container-head img {
         margin: 10px 0;
         margin-left: 20px;
